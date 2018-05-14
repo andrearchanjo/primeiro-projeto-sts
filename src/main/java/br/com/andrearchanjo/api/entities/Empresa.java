@@ -17,7 +17,7 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "empresa")
+@Table(name="empresa")
 public class Empresa implements Serializable{
 
 	private static final long serialVersionUID = 3960436649365666213L;
@@ -78,7 +78,7 @@ public class Empresa implements Serializable{
 		this.dataAtualizacao = dataAtualizacao;
 	}
 	
-	@OneToMany(mappedBy = "Empresa", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "empresa", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	public List<Funcionario> getFuncionarios() {
 		return funcionarios;
 	}

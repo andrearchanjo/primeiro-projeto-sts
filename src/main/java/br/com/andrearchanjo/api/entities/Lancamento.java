@@ -21,7 +21,7 @@ import javax.persistence.TemporalType;
 import br.com.andrearchanjo.api.enums.TipoEnum;
 
 @Entity
-@Table(name = "lancamento")
+@Table(name="lancamento")
 public class Lancamento implements Serializable{
 
 	private static final long serialVersionUID = 652456025156772839L;
